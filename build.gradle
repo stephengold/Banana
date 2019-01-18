@@ -1,0 +1,72 @@
+apply plugin: 'java'
+
+sourceCompatibility = '1.7'
+
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        // compile-time options:
+        options.compilerArgs << '-Xdiags:verbose'
+        options.compilerArgs << '-Xlint:unchecked'
+        options.deprecation = true
+        options.encoding = 'UTF-8'
+    }
+    tasks.withType(JavaExec) {
+        // runtime options:
+        args = []
+        classpath sourceSets.main.runtimeClasspath
+        //debug true
+        doFirst { println commandLine }
+        //enableAssertions true
+        //jvmArgs '-XX:+UseConcMarkSweepGC'
+        //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
+    }
+}
+
+// select one version of the Engine
+ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
+//ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
+
+if (!hasProperty('mainClass')) {
+    ext.mainClass = 'banana.RigidBodyStressTest'
+}
+
+repositories {
+    //mavenLocal()
+    maven { url 'https://dl.bintray.com/stephengold/jme3utilities' }
+    jcenter()
+    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
+    flatDir { dirs rootProject.file('lib') }
+}
+
+dependencies {
+    // from jcenter (or mavenLocal) repositories:
+    compile "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-blender:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
+    runtime "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+    // from stephengold's bintray repositories:
+    runtime 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
+
+    // select one physics library:
+    //compile 'org.jmonkeyengine:jme3-bullet:3.1.0-stable'
+    //compile 'org.jmonkeyengine:jme3-bullet:3.2.0-stable'
+    //compile 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
+    //compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
+    compile 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
+    //compile 'jme3utilities:Minie:0.6.3'
+
+    // for jme3-bullet ONLY, select one set of native libraries from jcenter:
+    //runtime "org.jmonkeyengine:jme3-bullet-native:3.1.0-stable"
+    //runtime "org.jmonkeyengine:jme3-bullet-native:3.2.0-stable"
+    //runtime "org.jmonkeyengine:jme3-bullet-native:3.2.1-stable"
+    //runtime "org.jmonkeyengine:jme3-bullet-native:3.2.2-stable"
+}
+
+// cleanup tasks
+clean { dependsOn 'cleanDLLs', 'cleanSOs' }
+task cleanDLLs(type: Delete) {
+    delete fileTree(dir: '.', include: '*.dll')
+}
+task cleanSOs(type: Delete) {
+    delete fileTree(dir: '.', include: '*.so')
+}
