@@ -236,7 +236,8 @@ public class RigidBodyStressTest extends SimpleApplication {
      */
     private void configurePhysics() {
         BulletAppState bulletAppState = new BulletAppState();
-        bulletAppState.setDebugEnabled(true);
+        //bulletAppState.setDebugEnabled(true);
+        bulletAppState.setThreadingType(BulletAppState.ThreadingType.PARALLEL);
         stateManager.attach(bulletAppState);
 
         physicsSpace = bulletAppState.getPhysicsSpace();
