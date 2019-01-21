@@ -17,6 +17,9 @@ gradle.projectsEvaluated {
         //debug true
         doFirst { println commandLine }
         //enableAssertions true
+        //jvmArgs '-verbose:gc'
+        jvmArgs '-Xbatch'
+        //jvmArgs '-XX:+PrintCompilation'
         //jvmArgs '-XX:+UseConcMarkSweepGC'
         //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
     }
