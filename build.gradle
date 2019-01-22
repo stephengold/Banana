@@ -30,7 +30,7 @@ ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 if (!hasProperty('mainClass')) {
-    ext.mainClass = 'banana.RigidBodyStressTest'
+    ext.mainClass = 'banana.TestRunner'
 }
 
 repositories {
