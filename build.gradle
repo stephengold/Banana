@@ -53,20 +53,20 @@ dependencies {
     //compile 'org.jmonkeyengine:jme3-bullet:3.1.0-stable'
     //compile 'org.jmonkeyengine:jme3-bullet:3.2.0-stable'
     //compile 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
-    //compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
+    compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
     //compile 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
     //compile 'jme3utilities:Minie:0.5.0'
     //compile 'jme3utilities:Minie:0.5.1'
     //compile 'jme3utilities:Minie:0.6.0'
     //compile 'jme3utilities:Minie:0.6.1'
     //compile 'jme3utilities:Minie:0.6.2'
-    compile 'jme3utilities:Minie:0.6.3'
+    //compile 'jme3utilities:Minie:0.6.3'
 
     // for jme3-bullet ONLY, select one set of native libraries from jcenter:
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.0-stable'
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
+    runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
 }
 
 // cleanup tasks
