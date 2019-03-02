@@ -454,7 +454,6 @@ public class TestDetectCollision
             fixedPco = new PhysicsRigidBody(fixedShape, 0f);
         }
         physicsSpace.add(fixedPco);
-        fixedPco.setUserObject(rootNode); // so collision listener will work
 
         CollisionShape movingShape = shapes[nextMovingShapeIndex];
         if (nextMovingTypeIndex == 1) {
@@ -465,7 +464,6 @@ public class TestDetectCollision
             movingPco = body;
         }
         physicsSpace.add(movingPco);
-        movingPco.setUserObject(rootNode); // so collision listener will work
 
         Vector3f directionOfMotion = directions[nextDirectionIndex];
         assert directionOfMotion.isUnitVector() : directionOfMotion;
