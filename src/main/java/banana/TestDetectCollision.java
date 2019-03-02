@@ -233,7 +233,7 @@ public class TestDetectCollision
                 /*
                  * Abort sphere/sphere tests with Native Bullet immediately.
                  * This is to avoid an infinite loop since Native Bullet
-                 * doesn't report sphere/sphere collisions.
+                 * doesn't report sphere/sphere collisions. (JME issue #1029)
                  */
                 reportResults("ABORTED");
                 terminateTest();
