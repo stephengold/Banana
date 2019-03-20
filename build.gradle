@@ -26,7 +26,8 @@ gradle.projectsEvaluated {
 }
 
 // select one version of the Engine
-ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
+//ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
+ext.jmonkeyengineVersion = '3.2.3-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 if (!hasProperty('mainClass')) {
@@ -53,7 +54,8 @@ dependencies {
     //compile 'org.jmonkeyengine:jme3-bullet:3.1.0-stable'
     //compile 'org.jmonkeyengine:jme3-bullet:3.2.0-stable'
     //compile 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
-    compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
+    //compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
+    compile 'org.jmonkeyengine:jme3-bullet:3.2.3-stable'
     //compile 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
     //compile 'jme3utilities:Minie:0.5.0'
     //compile 'jme3utilities:Minie:0.5.1'
@@ -61,12 +63,20 @@ dependencies {
     //compile 'jme3utilities:Minie:0.6.1'
     //compile 'jme3utilities:Minie:0.6.2'
     //compile 'jme3utilities:Minie:0.6.3'
+    //compile 'jme3utilities:Minie:0.6.4'
+    //compile 'jme3utilities:Minie:0.6.5'
+    //compile 'jme3utilities:Minie:0.7.0'
+    //compile 'jme3utilities:Minie:0.7.1'
+    //compile 'jme3utilities:Minie:0.7.2'
+    //compile 'jme3utilities:Minie:0.7.3'
+    //compile 'jme3utilities:Minie:0.7.4'
 
     // for jme3-bullet ONLY, select one set of native libraries from jcenter:
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.0-stable'
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
-    runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
+    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
+    runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
 }
 
 // cleanup tasks
