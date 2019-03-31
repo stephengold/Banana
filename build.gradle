@@ -28,6 +28,7 @@ gradle.projectsEvaluated {
 // select one version of the Engine
 //ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
 ext.jmonkeyengineVersion = '3.2.3-stable' // from jcenter
+//ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 if (!hasProperty('mainClass')) {
@@ -56,6 +57,7 @@ dependencies {
     //compile 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
     //compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
     compile 'org.jmonkeyengine:jme3-bullet:3.2.3-stable'
+    //compile 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha1'
     //compile 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
     //compile 'jme3utilities:Minie:0.5.0'
     //compile 'jme3utilities:Minie:0.5.1'
@@ -77,6 +79,7 @@ dependencies {
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
     runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
+    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
 }
 
 // cleanup tasks
