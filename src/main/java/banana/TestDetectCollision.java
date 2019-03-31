@@ -37,6 +37,7 @@ import com.jme3.bullet.collision.PhysicsCollisionObject;
 import com.jme3.bullet.collision.shapes.BoxCollisionShape;
 import com.jme3.bullet.collision.shapes.CollisionShape;
 import com.jme3.bullet.collision.shapes.CylinderCollisionShape;
+import com.jme3.bullet.collision.shapes.HullCollisionShape;
 import com.jme3.bullet.collision.shapes.SimplexCollisionShape;
 import com.jme3.bullet.collision.shapes.SphereCollisionShape;
 import com.jme3.bullet.objects.PhysicsGhostObject;
@@ -158,11 +159,23 @@ public class TestDetectCollision
         CollisionShape tetrahedron = new SimplexCollisionShape(p1, p2, p3, p4);
         tetrahedron.setMargin(margin);
 
+        float[] octVertices = new float[]{
+            +size, 0f, 0f,
+            -size, 0f, 0f,
+            0f, +size, 0f,
+            0f, -size, 0f,
+            0f, 0f, +size,
+            0f, 0f, -size
+        };
+        HullCollisionShape octahedron = new HullCollisionShape(octVertices);
+        octahedron.setMargin(margin);
+
         shapes = new CollisionShape[]{
             sphere,
             box,
             cylinder,
-            tetrahedron
+            tetrahedron,
+            octahedron
         };
 
         directions = new Vector3f[]{
