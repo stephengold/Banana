@@ -72,6 +72,9 @@ dependencies {
     //compile 'jme3utilities:Minie:0.7.2'
     //compile 'jme3utilities:Minie:0.7.3'
     //compile 'jme3utilities:Minie:0.7.4'
+    //compile 'jme3utilities:Minie:0.7.5'
+    //compile 'jme3utilities:Minie:0.7.6'
+    //compile 'jme3utilities:Minie:0.7.7'
 
     // for jme3-bullet ONLY, select one set of native libraries from jcenter:
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
