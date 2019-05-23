@@ -28,6 +28,7 @@ gradle.projectsEvaluated {
 //ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
 ext.jmonkeyengineVersion = '3.2.3-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jcenter
+//ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 if (!hasProperty('mainClass')) {
@@ -47,6 +48,7 @@ dependencies {
     compile "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
     compile "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
     runtime "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+
     // from stephengold's bintray repositories:
     runtime 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
 
@@ -75,6 +77,8 @@ dependencies {
     //compile 'jme3utilities:Minie:0.7.6'
     //compile 'jme3utilities:Minie:0.7.7'
     //compile 'jme3utilities:Minie:0.8.0'
+    //compile 'jme3utilities:Minie:0.8.1'
+    //compile 'jme3utilities:Minie:0.9.0'
 
     // for jme3-bullet ONLY, select one set of native libraries from jcenter:
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
@@ -83,6 +87,7 @@ dependencies {
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
     runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
     //runtime 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
+    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
 }
 
 // cleanup tasks
