@@ -1,4 +1,6 @@
-apply plugin: 'java'
+plugins {
+    id 'java'
+}
 
 sourceCompatibility = '1.7'
 
@@ -45,55 +47,55 @@ repositories {
 
 dependencies {
     // from jcenter (or mavenLocal) repositories:
-    compile "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
-    compile "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
-    runtime "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
+    implementation "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
+    runtimeOnly "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
 
     // from stephengold's bintray repositories:
-    runtime 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
+    runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
 
     // select one physics library:
-    //compile 'org.jmonkeyengine:jme3-bullet:3.1.0-stable'
-    //compile 'org.jmonkeyengine:jme3-bullet:3.2.0-stable'
-    //compile 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
-    //compile 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
-    compile 'org.jmonkeyengine:jme3-bullet:3.2.3-stable'
-    //compile 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha1'
-    //compile 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha2'
-    //compile 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
-    //compile 'org.jmonkeyengine:jme3-jbullet:3.2.3-stable'
-    //compile 'org.jmonkeyengine:jme3-jbullet:3.3.0-alpha1'
-    //compile 'org.jmonkeyengine:jme3-jbullet:3.3.0-alpha2'
-    //compile 'jme3utilities:Minie:0.5.0'
-    //compile 'jme3utilities:Minie:0.5.1'
-    //compile 'jme3utilities:Minie:0.6.0'
-    //compile 'jme3utilities:Minie:0.6.1'
-    //compile 'jme3utilities:Minie:0.6.2'
-    //compile 'jme3utilities:Minie:0.6.3'
-    //compile 'jme3utilities:Minie:0.6.4'
-    //compile 'jme3utilities:Minie:0.6.5'
-    //compile 'jme3utilities:Minie:0.7.0'
-    //compile 'jme3utilities:Minie:0.7.1'
-    //compile 'jme3utilities:Minie:0.7.2'
-    //compile 'jme3utilities:Minie:0.7.3'
-    //compile 'jme3utilities:Minie:0.7.4'
-    //compile 'jme3utilities:Minie:0.7.5'
-    //compile 'jme3utilities:Minie:0.7.6'
-    //compile 'jme3utilities:Minie:0.7.7'
-    //compile 'jme3utilities:Minie:0.8.0'
-    //compile 'jme3utilities:Minie:0.8.1'
-    //compile 'jme3utilities:Minie:0.9.0'
-    //compile 'jme3utilities:Minie:0.9.1'
-    //compile 'jme3utilities:Minie:0.9.2'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.1.0-stable'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.2.0-stable'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
+    implementation 'org.jmonkeyengine:jme3-bullet:3.2.3-stable'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha1'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha2'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.3-stable'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.3.0-alpha1'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.3.0-alpha2'
+    //implementation 'jme3utilities:Minie:0.5.0'
+    //implementation 'jme3utilities:Minie:0.5.1'
+    //implementation 'jme3utilities:Minie:0.6.0'
+    //implementation 'jme3utilities:Minie:0.6.1'
+    //implementation 'jme3utilities:Minie:0.6.2'
+    //implementation 'jme3utilities:Minie:0.6.3'
+    //implementation 'jme3utilities:Minie:0.6.4'
+    //implementation 'jme3utilities:Minie:0.6.5'
+    //implementation 'jme3utilities:Minie:0.7.0'
+    //implementation 'jme3utilities:Minie:0.7.1'
+    //implementation 'jme3utilities:Minie:0.7.2'
+    //implementation 'jme3utilities:Minie:0.7.3'
+    //implementation 'jme3utilities:Minie:0.7.4'
+    //implementation 'jme3utilities:Minie:0.7.5'
+    //implementation 'jme3utilities:Minie:0.7.6'
+    //implementation 'jme3utilities:Minie:0.7.7'
+    //implementation 'jme3utilities:Minie:0.8.0'
+    //implementation 'jme3utilities:Minie:0.8.1'
+    //implementation 'jme3utilities:Minie:0.9.0'
+    //implementation 'jme3utilities:Minie:0.9.1'
+    //implementation 'jme3utilities:Minie:0.9.2'
 
     // for jme3-bullet ONLY, select one set of native libraries from jcenter:
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.0-stable'
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
-    runtime 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
-    //runtime 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.0-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
+    runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
 }
 
 // cleanup tasks
