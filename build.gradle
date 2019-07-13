@@ -3,6 +3,7 @@ plugins {
 }
 
 sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
 
 gradle.projectsEvaluated {
     tasks.withType(JavaCompile) { // compile-time options:
@@ -28,7 +29,8 @@ gradle.projectsEvaluated {
 
 // select one version of the Engine
 //ext.jmonkeyengineVersion = '3.2.2-stable' // from jcenter
-ext.jmonkeyengineVersion = '3.2.3-stable' // from jcenter
+//ext.jmonkeyengineVersion = '3.2.3-stable' // from jcenter
+ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
@@ -60,13 +62,11 @@ dependencies {
     //implementation 'org.jmonkeyengine:jme3-bullet:3.2.0-stable'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.2.1-stable'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.2.2-stable'
-    implementation 'org.jmonkeyengine:jme3-bullet:3.2.3-stable'
+    //implementation 'org.jmonkeyengine:jme3-bullet:3.2.3-stable'
+    implementation 'org.jmonkeyengine:jme3-bullet:3.2.4-stable'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha1'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha2'
     //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
-    //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.3-stable'
-    //implementation 'org.jmonkeyengine:jme3-jbullet:3.3.0-alpha1'
-    //implementation 'org.jmonkeyengine:jme3-jbullet:3.3.0-alpha2'
     //implementation 'jme3utilities:Minie:0.5.0'
     //implementation 'jme3utilities:Minie:0.5.1'
     //implementation 'jme3utilities:Minie:0.6.0'
@@ -93,12 +93,13 @@ dependencies {
     //implementation 'jme3utilities:Minie:0.9.5for32'
     //implementation 'jme3utilities:Minie:0.9.5for33'
 
-    // for jme3-bullet ONLY, select one set of native libraries from jcenter:
+    // for jme3-bullet ONLY, select one JAR of native libraries from jcenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.0-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
-    runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
+    runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.4-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
 }
