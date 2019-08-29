@@ -43,8 +43,9 @@ jar.manifest.attributes( 'Main-Class': 'banana.TestRunner' )
 repositories {
     //mavenLocal()
     maven { url 'https://dl.bintray.com/stephengold/jme3utilities' }
+    maven { url 'https://dl.bintray.com/riccardo/v-hacd' } // for v-hacd-java-bindings
     jcenter()
-    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' }
+    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-jbullet and jme3-testdata
     flatDir { dirs rootProject.file('lib') }
 }
 
@@ -92,6 +93,18 @@ dependencies {
     //implementation 'jme3utilities:Minie:0.9.4'
     //implementation 'jme3utilities:Minie:0.9.5for32'
     //implementation 'jme3utilities:Minie:0.9.5for33'
+    //implementation 'jme3utilities:Minie:0.9.6for32'
+    //implementation 'jme3utilities:Minie:0.9.6for33'
+    //implementation 'jme3utilities:Minie:0.9.7for32'
+    //implementation 'jme3utilities:Minie:0.9.8for33'
+    //implementation 'jme3utilities:Minie:0.9.9for32'
+    //implementation 'jme3utilities:Minie:0.9.10for32'
+    //implementation 'jme3utilities:Minie:0.9.11for32'
+    //implementation 'jme3utilities:Minie:0.9.12for32'
+    //implementation 'jme3utilities:Minie:0.9.13for32'
+    //implementation 'jme3utilities:Minie:0.9.13for33'
+    //implementation 'jme3utilities:Minie:0.9.14for32'
+    //implementation 'jme3utilities:Minie:0.9.14for33'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jcenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
