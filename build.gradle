@@ -105,6 +105,8 @@ dependencies {
     //implementation 'jme3utilities:Minie:0.9.13for33'
     //implementation 'jme3utilities:Minie:0.9.14for32'
     //implementation 'jme3utilities:Minie:0.9.14for33'
+    //implementation 'jme3utilities:Minie:0.9.15for32'
+    //implementation 'jme3utilities:Minie:0.9.15for33'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jcenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
