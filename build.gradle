@@ -47,12 +47,14 @@ repositories {
     jcenter()
     maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-jbullet and jme3-testdata
     flatDir { dirs rootProject.file('lib') }
+    //maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     // from jcenter (or mavenLocal) repositories:
     implementation "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
     implementation "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
+    //implementation "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
     runtimeOnly "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
 
     // from stephengold's bintray repositories:
