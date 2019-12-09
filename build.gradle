@@ -34,6 +34,7 @@ ext.jmonkeyengineVersion = '3.2.4-stable' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jcenter
+//ext.jmonkeyengineVersion = 'v3.3.0-beta1' // from jcenter
 //ext.jmonkeyengineVersion = '3.3.0-SNAPSHOT' // from mavenLocal
 
 mainClassName = 'banana.TestRunner'
@@ -72,6 +73,7 @@ dependencies {
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha1'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha2'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha5'
+    //implementation 'org.jmonkeyengine:jme3-bullet:v3.3.0-beta1'
     //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
     //implementation 'jme3utilities:Minie:0.5.0'
     //implementation 'jme3utilities:Minie:0.5.1'
@@ -116,6 +118,7 @@ dependencies {
     //implementation 'jme3utilities:Minie:1.0.0for33'
     //implementation 'jme3utilities:Minie:1.1.0for32'
     //implementation 'jme3utilities:Minie:1.1.0for33'
+    //implementation 'jme3utilities:Minie:1.1.1for33'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jcenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
@@ -127,6 +130,7 @@ dependencies {
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha5'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:v3.3.0-beta1'
 }
 
 // cleanup tasks
