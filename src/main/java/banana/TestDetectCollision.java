@@ -308,9 +308,13 @@ public class TestDetectCollision
      */
     private void configureCamera() {
         flyCam.setEnabled(false);
-        cam.setParallelProjection(true);
+
+        float aspectRatio = ((float) cam.getWidth()) / cam.getHeight();
         cam.setFrustumTop(3f * size);
         cam.setFrustumBottom(-3f * size);
+        cam.setFrustumLeft(-3f * aspectRatio * size);
+        cam.setFrustumRight(3f * aspectRatio * size);
+        cam.setParallelProjection(true);
     }
 
     /**
