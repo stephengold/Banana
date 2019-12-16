@@ -116,6 +116,8 @@ dependencies {
     //implementation 'jme3utilities:Minie:1.0.0for33'
     //implementation 'jme3utilities:Minie:1.1.0for32'
     //implementation 'jme3utilities:Minie:1.1.0for33'
+    //implementation 'jme3utilities:Minie:1.2.0for32'
+    //implementation 'jme3utilities:Minie:1.2.0for33'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jcenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
