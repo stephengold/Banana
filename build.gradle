@@ -51,7 +51,7 @@ repositories {
     maven { url 'https://dl.bintray.com/stephengold/jme3utilities' } // for pre-v1.4 Minie
     maven { url 'https://dl.bintray.com/stephengold/v-hacd' } // for v-hacd-java-bindings
     jcenter()
-    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-jbullet and jme3-testdata
+    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-testdata
     flatDir { dirs rootProject.file('lib') }
     //maven { url 'https://jitpack.io' }
 }
@@ -77,7 +77,11 @@ dependencies {
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha2'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-alpha5'
     //implementation 'org.jmonkeyengine:jme3-bullet:3.3.0-beta1'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.1.0-stable'
     //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.2-stable'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.3-stable'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.2.4-stable'
+    //implementation 'org.jmonkeyengine:jme3-jbullet:3.3.0-beta1'
     //implementation 'jme3utilities:Minie:0.5.0'
     //implementation 'jme3utilities:Minie:0.5.1'
     //implementation 'jme3utilities:Minie:0.6.0'
