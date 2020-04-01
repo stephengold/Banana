@@ -32,12 +32,13 @@ gradle.projectsEvaluated {
 //ext.jmonkeyengineVersion = '3.2.1-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.2.2-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.2.3-stable' // from jCenter
-ext.jmonkeyengineVersion = '3.2.4-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.4-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jCenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jCenter
 //ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jCenter
 //ext.jmonkeyengineVersion = '3.3.0-beta1' // from jCenter
 //ext.jmonkeyengineVersion = '3.3.0-beta2' // from jCenter
+ext.jmonkeyengineVersion = '3.3.0-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 mainClassName = 'banana.TestRunner'
@@ -130,12 +131,13 @@ dependencies {
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
-    runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.4-stable'
+    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.4-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha5'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-beta1'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-beta2'
+    runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-stable'
 }
 
 // cleanup tasks
