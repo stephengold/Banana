@@ -27,7 +27,7 @@ gradle.projectsEvaluated {
     }
 }
 
-// select one version of the Engine
+// select one version of the Engine:
 //ext.jmonkeyengineVersion = '3.2.0-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.2.1-stable' // from jCenter
 //ext.jmonkeyengineVersion = '3.2.2-stable' // from jCenter
@@ -59,10 +59,10 @@ repositories {
 
 dependencies {
     // from jcenter (or mavenLocal) repositories:
-    implementation "org.jmonkeyengine:jme3-core:$jmonkeyengineVersion"
-    implementation "org.jmonkeyengine:jme3-desktop:$jmonkeyengineVersion"
-    //implementation "org.jmonkeyengine:jme3-plugins:$jmonkeyengineVersion"
-    runtimeOnly "org.jmonkeyengine:jme3-lwjgl:$jmonkeyengineVersion"
+    implementation 'org.jmonkeyengine:jme3-core:' + jmonkeyengineVersion
+    implementation 'org.jmonkeyengine:jme3-desktop:' + jmonkeyengineVersion
+    //implementation 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
+    runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jmonkeyengineVersion
 
     // from stephengold's bintray repositories:
     runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
@@ -124,6 +124,8 @@ dependencies {
     //implementation 'com.github.stephengold:Minie:1.5.0for32'
     //implementation 'com.github.stephengold:Minie:1.5.0for33'
     //implementation 'com.github.stephengold:Minie:1.5.0+debugfor33'
+    //implementation 'com.github.stephengold:Minie:1.6.0+for32'
+    //implementation 'com.github.stephengold:Minie:1.6.0'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jCenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
