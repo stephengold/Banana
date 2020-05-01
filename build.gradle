@@ -3,6 +3,8 @@ plugins {
     id 'java'
 }
 
+description = 'Performance benchmarks for jMonkeyEngine3'
+
 sourceCompatibility = '1.7'
 targetCompatibility = '1.7'
 
