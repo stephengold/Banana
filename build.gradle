@@ -6,25 +6,24 @@ plugins {
 sourceCompatibility = '1.7'
 targetCompatibility = '1.7'
 
-gradle.projectsEvaluated {
-    tasks.withType(JavaCompile) { // compile-time options:
-        options.compilerArgs << '-Xdiags:verbose'
-        options.compilerArgs << '-Xlint:unchecked'
-        options.deprecation = true
-        options.encoding = 'UTF-8'
-    }
-    tasks.withType(JavaExec) { // runtime options:
-        args = []
-        classpath sourceSets.main.runtimeClasspath
-        //debug true
-        //enableAssertions true
-        //jvmArgs '-verbose:gc'
-        jvmArgs '-Xbatch'
-        //jvmArgs '-Xms512m', '-Xmx512m'
-        //jvmArgs '-XX:+PrintCompilation'
-        //jvmArgs '-XX:+UseConcMarkSweepGC'
-        //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
-    }
+tasks.withType(JavaCompile) { // compile-time options:
+    options.compilerArgs << '-Xdiags:verbose'
+    options.compilerArgs << '-Xlint:unchecked'
+    options.deprecation = true
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(JavaExec) { // runtime options:
+    args = []
+    classpath sourceSets.main.runtimeClasspath
+    //debug true
+    //enableAssertions true
+    //jvmArgs '-verbose:gc'
+    jvmArgs '-Xbatch'
+    //jvmArgs '-Xms512m', '-Xmx512m'
+    //jvmArgs '-XX:+PrintCompilation'
+    //jvmArgs '-XX:+UseConcMarkSweepGC'
+    //jvmArgs '-XX:+UseG1GC', '-XX:MaxGCPauseMillis=10'
 }
 
 // select one version of the Engine:
