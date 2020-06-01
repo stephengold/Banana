@@ -128,6 +128,11 @@ dependencies {
     //implementation 'com.github.stephengold:Minie:1.5.0+debugfor33'
     //implementation 'com.github.stephengold:Minie:1.6.0+for32'
     //implementation 'com.github.stephengold:Minie:1.6.0'
+    //implementation 'com.github.stephengold:Minie:1.6.1'
+    //implementation 'com.github.stephengold:Minie:1.7.0+debug'
+    //implementation 'com.github.stephengold:Minie:1.7.0+debugdp'
+    //implementation 'com.github.stephengold:Minie:1.7.0+dp'
+    //implementation 'com.github.stephengold:Minie:1.7.0'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jCenter:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
