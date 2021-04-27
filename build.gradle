@@ -8,14 +8,14 @@ description = 'Performance benchmarks for jMonkeyEngine3'
 sourceCompatibility = '1.7'
 targetCompatibility = '1.7'
 
-tasks.withType(JavaCompile) { // compile-time options:
+tasks.withType(JavaCompile) { // Java compile-time options:
     options.compilerArgs << '-Xdiags:verbose'
     options.compilerArgs << '-Xlint:unchecked'
     options.deprecation = true
     options.encoding = 'UTF-8'
 }
 
-tasks.withType(JavaExec) { // runtime options:
+tasks.withType(JavaExec) { // Java runtime options:
     args = []
     classpath sourceSets.main.runtimeClasspath
     //debug true
@@ -29,18 +29,13 @@ tasks.withType(JavaExec) { // runtime options:
 }
 
 // select one version of the Engine:
-//ext.jmonkeyengineVersion = '3.2.0-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.1-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.2-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.3-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.2.4-stable' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-alpha1' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-alpha2' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-alpha5' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-beta1' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-beta2' // from jCenter
-//ext.jmonkeyengineVersion = '3.3.0-stable' // from jCenter
-ext.jmonkeyengineVersion = '3.3.2-stable' // from jCenter
+//ext.jmonkeyengineVersion = '3.2.2-stable' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.2.3-stable' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.2.4-stable' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.3.0-stable' // from mavenCentral
+ext.jmonkeyengineVersion = '3.3.2-stable' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.4.0-beta1' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.4.0-beta2' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 mainClassName = 'banana.TestRunner'
@@ -54,7 +49,7 @@ repositories {
     maven { url 'https://dl.bintray.com/stephengold/jme3utilities' } // for pre-v1.4 Minie
     maven { url 'https://dl.bintray.com/stephengold/v-hacd' } // for v-hacd-java-bindings
     jcenter()
-    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-testdata
+    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-testdata-3.1.0-stable
     flatDir { dirs rootProject.file('lib') }
     //maven { url 'https://jitpack.io' }
 }
@@ -108,30 +103,26 @@ dependencies {
     //implementation 'com.github.stephengold:Minie:1.4.0for33'
     //implementation 'com.github.stephengold:Minie:1.4.1for33'
     //implementation 'com.github.stephengold:Minie:1.5.0for33'
-    //implementation 'com.github.stephengold:Minie:1.6.0'
+    //implementation 'com.github.stephengold:Minie:1.6.0+for32'
     //implementation 'com.github.stephengold:Minie:1.6.1'
     //implementation 'com.github.stephengold:Minie:1.7.0'
     //implementation 'com.github.stephengold:Minie:2.0.0'
     //implementation 'com.github.stephengold:Minie:2.0.1'
-    //implementation 'com.github.stephengold:Minie:3.0.0+debug'
     //implementation 'com.github.stephengold:Minie:3.0.0'
-    //implementation 'com.github.stephengold:Minie:3.1.0+debug'
-    //implementation 'com.github.stephengold:Minie:3.1.0+debugdp'
-    //implementation 'com.github.stephengold:Minie:3.1.0+dp'
     //implementation 'com.github.stephengold:Minie:3.1.0'
+    //implementation 'com.github.stephengold:Minie:4.0.0'
+    //implementation 'com.github.stephengold:Minie:4.0.1'
+    //implementation 'com.github.stephengold:Minie:4.0.2+debug'
+    //implementation 'com.github.stephengold:Minie:4.0.2+debugdp'
+    //implementation 'com.github.stephengold:Minie:4.0.2+dp'
+    //implementation 'com.github.stephengold:Minie:4.0.2'
+    //implementation 'com.github.stephengold:Minie:4.1.0+for33'
+    //implementation 'com.github.stephengold:Minie:4.1.0+for34'
 
     // for jme3-bullet ONLY, select one JAR of native libraries from jCenter:
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.1.0-stable'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.0-stable'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.1-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.4-stable'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha1'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha2'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-alpha5'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-beta1'
-    //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-beta2'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.0-stable'
     runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.3.2-stable'
 }
