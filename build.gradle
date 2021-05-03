@@ -46,22 +46,17 @@ jar.manifest.attributes('Main-Class': mainClassName)
 
 repositories {
     //mavenLocal()
-    maven { url 'https://dl.bintray.com/stephengold/jme3utilities' } // for pre-v1.4 Minie
-    maven { url 'https://dl.bintray.com/stephengold/v-hacd' } // for v-hacd-java-bindings
+    mavenCentral()
     jcenter()
-    maven { url 'https://dl.bintray.com/stephengold/org.jmonkeyengine' } // for jme3-testdata-3.1.0-stable
     flatDir { dirs rootProject.file('lib') }
     //maven { url 'https://jitpack.io' }
 }
 
 dependencies {
-    // from jcenter (or mavenLocal) repositories:
     implementation 'org.jmonkeyengine:jme3-core:' + jmonkeyengineVersion
     implementation 'org.jmonkeyengine:jme3-desktop:' + jmonkeyengineVersion
     //implementation 'org.jmonkeyengine:jme3-plugins:' + jmonkeyengineVersion
     runtimeOnly 'org.jmonkeyengine:jme3-lwjgl:' + jmonkeyengineVersion
-
-    // from stephengold's bintray repositories:
     runtimeOnly 'org.jmonkeyengine:jme3-testdata:3.1.0-stable'
 
     // select ONE physics library:
@@ -86,7 +81,7 @@ dependencies {
     //implementation 'com.github.stephengold:Minie:4.1.0+for33'
     //implementation 'com.github.stephengold:Minie:4.1.0+for34'
 
-    // for jme3-bullet ONLY, select one JAR of native libraries from jCenter:
+    // for jme3-bullet ONLY, select one JAR of native libraries:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.3-stable'
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.4-stable'
