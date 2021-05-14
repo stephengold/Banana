@@ -37,6 +37,7 @@ ext.jmonkeyengineVersion = '3.3.2-stable' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-beta1' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-beta2' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-beta3' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.4.0-beta4' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-SNAPSHOT' // from mavenLocal
 
 mainClassName = 'banana.TestRunner'
