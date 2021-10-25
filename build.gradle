@@ -64,7 +64,7 @@ dependencies {
 
     // select ONE physics library:
     //implementation 'org.jmonkeyengine:jme3-bullet:' + jmonkeyengineVersion
-    implementation 'org.jmonkeyengine:jme3-jbullet:' + jmonkeyengineVersion
+    //implementation 'org.jmonkeyengine:jme3-jbullet:' + jmonkeyengineVersion
     //implementation 'com.github.stephengold:Minie:1.6.0+for32'
     //implementation 'com.github.stephengold:Minie:3.1.0'
     //implementation 'com.github.stephengold:Minie:4.0.2'
@@ -73,10 +73,12 @@ dependencies {
     //implementation 'com.github.stephengold:Minie:4.1.1'
     //implementation 'com.github.stephengold:Minie:4.2.0'
     //implementation 'com.github.stephengold:Minie:4.3.0'
-    //implementation 'com.github.stephengold:Minie:4.3.0+big3'
-    //implementation 'com.github.stephengold:Minie:4.3.0+debug'
-    //implementation 'com.github.stephengold:Minie:4.3.0+dp'
-    //implementation 'com.github.stephengold:Minie:4.3.0+mp'
+    //implementation 'com.github.stephengold:Minie:4.4.0'
+    //implementation 'com.github.stephengold:Minie:4.4.0+big3'
+    //implementation 'com.github.stephengold:Minie:4.4.0+debug'
+    //implementation 'com.github.stephengold:Minie:4.4.0+dp'
+    //implementation 'com.github.stephengold:Minie:4.4.0+mp'
+    //implementation 'com.github.stephengold:Minie:4.5.0-test1'
 
     // for jme3-bullet ONLY, select one JAR of native libraries:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
