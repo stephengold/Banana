@@ -34,11 +34,9 @@ tasks.withType(JavaExec) { // Java runtime options:
 //ext.jmonkeyengineVersion = '3.2.4-stable' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.3.0-stable' // from mavenCentral
 ext.jmonkeyengineVersion = '3.3.2-stable' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-beta1' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-beta2' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-beta3' // from mavenCentral
-//ext.jmonkeyengineVersion = '3.4.0-beta4' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.4.0-stable' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.4.1-stable' // from mavenCentral
+//ext.jmonkeyengineVersion = '3.5.0-alpha1' // from mavenCentral
 //ext.jmonkeyengineVersion = '3.5.0-SNAPSHOT' // from mavenLocal
 
 mainClassName = 'banana.TestRunner'
@@ -74,11 +72,12 @@ dependencies {
     //implementation 'com.github.stephengold:Minie:4.2.0'
     //implementation 'com.github.stephengold:Minie:4.3.0'
     //implementation 'com.github.stephengold:Minie:4.4.0'
-    //implementation 'com.github.stephengold:Minie:4.4.0+big3'
-    //implementation 'com.github.stephengold:Minie:4.4.0+debug'
-    //implementation 'com.github.stephengold:Minie:4.4.0+dp'
-    //implementation 'com.github.stephengold:Minie:4.4.0+mp'
-    //implementation 'com.github.stephengold:Minie:4.5.0-test1'
+    //implementation 'com.github.stephengold:Minie:4.5.0'
+    //implementation 'com.github.stephengold:Minie:4.6.0'
+    //implementation 'com.github.stephengold:Minie:4.6.0+big3'
+    //implementation 'com.github.stephengold:Minie:4.6.0+debug'
+    //implementation 'com.github.stephengold:Minie:4.6.0+dp'
+    //implementation 'com.github.stephengold:Minie:4.6.0+mp'
 
     // for jme3-bullet ONLY, select one JAR of native libraries:
     //runtimeOnly 'org.jmonkeyengine:jme3-bullet-native:3.2.2-stable'
